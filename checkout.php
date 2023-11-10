@@ -21,13 +21,26 @@
 
         <div class="form-group">
             <label for="amount">Amount:</label>
-            <input type="number" class="form-control" id="amount" value="<?php echo isset($_POST['total-amount']) ? $_POST['total-amount'] : 'N/A'; ?>" readonly>
+            <input type="number" class="form-control" id="amount" value="<?php echo isset($_POST['total_amount']) ? $_POST['total_amount'] : ''; ?>" readonly>
         </div>
 
         <button type="button" class="btn btn-primary" id="payButton">Pay</button>
     </form>
 </div>
 
+<div>
+  <p>Received data from cart.php:</p>
+  <pre>
+    <?php
+    print_r($_POST);
+    ?>
+  </pre>
+</div>
+
+<script>
+    const totalAmount = <?= isset($_POST['total_amount']) ? $_POST['total_amount'] : 0; ?>;
+    document.getElementById('amount').value = totalAmount;
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

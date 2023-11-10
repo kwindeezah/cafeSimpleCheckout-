@@ -119,13 +119,13 @@ https://www.tooplate.com/view/2121-wave-cafe
             </nav>
             <div id="cold" class="tm-tab-content">
               <div class="tm-list">
-                <div class="tm-list-item">          
+              <div class="tm-list-item">          
                   <img src="img/iced-americano.png" alt="Image" class="tm-list-item-img">
                   <div class="tm-black-bg tm-list-item-text">
                     <h3 class="tm-list-item-name">Iced Americano<span class="tm-list-item-price">#4000</span></h3>
                     <p class="tm-list-item-description">Traditional Iced Americano is made by pouring cold water, over ice followed by shots of espresso. With manual pour over, the coffee drains directly onto the cold water and ice, so it chills during brewing.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" product-name="Iced Americano" product-price="4000">Add to Cart</button> -->
-                    <a href="index.php?pro_id=1&price=4000" class="tm-btn-primary tm-align-right">Add to Cart</a>
+                    <a href="index.php?pro_id=Iced Americano&price=4000" class="tm-btn-primary tm-align-right">Add to Cart</a>
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -134,7 +134,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Iced Cappuccino<span class="tm-list-item-price">#4050</span></h3>
                     <p class="tm-list-item-description">A coffee drink with espresso, milk, ice, and optional sweetener.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Iced Cappuccino" data-product-price="4050">Add to Cart</button> -->
-                    <a href="index.php?pro_id=2" class="tm-btn-primary tm-align-right">Add to Cart</a>
+                    <a href="index.php?pro_id=Iced Cappuccino&price=4050" class="tm-btn-primary tm-align-right">Add to Cart</a>
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -143,7 +143,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Iced Espresso<span class="tm-list-item-price">#7000</span></h3>
                     <p class="tm-list-item-description">Espresso served over ice, often with milk</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Iced Espresso" data-product-price="7000">Add to Cart</button> -->
-                    <a href="index.php?pro_id=3" class="tm-btn-primary tm-align-right">Add to Cart</a>
+                    <a href="index.php?pro_id=Iced Espresso&price=7000" class="tm-btn-primary tm-align-right">Add to Cart</a>
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -152,7 +152,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Iced Latte<span class="tm-list-item-price">#6000</span></h3>
                     <p class="tm-list-item-description">An iced latte is a chilled coffee beverage that's made by mixing espresso with chilled milk, simple syrup, and ice cubes.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Iced Latte" data-product-price="6000">Add to Cart</button> -->
-                    <a href="index.php?pro_id=4" class="tm-btn-primary tm-align-right">Add to Cart</a>
+                    <a href="index.php?pro_id=Iced Latte&price=6000" class="tm-btn-primary tm-align-right">Add to Cart</a>
                   </div>
                 </div> 
                                        
@@ -168,7 +168,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Hot Americano<span class="tm-list-item-price">#4000</span></h3>
                     <p class="tm-list-item-description">Espresso poured over hot water.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Hot Americano" data-product-price="4000">Add to Cart</button>  -->
-                    <a href="index.php?pro_id=5" class="tm-btn-primary tm-align-right">Add to Cart</a>            
+                    <a href="index.php?pro_id=Hot Americano&price=4000" class="tm-btn-primary tm-align-right">Add to Cart</a>            
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -177,7 +177,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Hot Cappuccino<span class="tm-list-item-price">#4050</span></h3>
                     <p class="tm-list-item-description">A classic espresso drink offering frothy, bold deliciousness, we combine espresso with steamed milk, then top it with a thick layer of milk foam.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Hot Cappuccino" data-product-price="4050">Add to Cart</button> -->
-                    <a href="index.php?pro_id=6" class="tm-btn-primary tm-align-right">Add to Cart</a>                 
+                    <a href="index.php?pro_id=Hot Cappuccino&price=4050" class="tm-btn-primary tm-align-right">Add to Cart</a>                 
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -186,7 +186,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Hot Espresso<span class="tm-list-item-price">#7000</span></h3>
                     <p class="tm-list-item-description">Made with a shot (or more!) of espresso and topped with steamed milk and foam, the latte is sweet, rich, and a perfect pick-me-up in the morning.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Hot espresso" data-product-price="7000">Add to Cart</button> -->
-                    <a href="index.php?pro_id=7" class="tm-btn-primary tm-align-right">Add to Cart</a>            
+                    <a href="index.php?pro_id=Hot Espresso&7000" class="tm-btn-primary tm-align-right">Add to Cart</a>            
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -195,7 +195,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Hot Latte<span class="tm-list-item-price">#6000</span></h3>
                     <p class="tm-list-item-description">Made with steamed, frothy milk, blended with our rich, freshly ground and brewed espresso.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Hot Latte" data-product-price="6000">Add to Cart</button> -->
-                    <a href="index.php?pro_id=8" class="tm-btn-primary tm-align-right">Add to Cart</a>          
+                    <a href="index.php?pro_id=Hot Latte&price=6000" class="tm-btn-primary tm-align-right">Add to Cart</a>          
                   </div>
                 </div>
                          
@@ -209,8 +209,9 @@ https://www.tooplate.com/view/2121-wave-cafe
                   <div class="tm-black-bg tm-list-item-text">
                     <h3 class="tm-list-item-name">Strawberry Smoothie<span class="tm-list-item-price">#2500</span></h3>
                     <p class="tm-list-item-description">Frozen strawberries, frozen bananas, yogurt, and a liquid such as almond milk or orange juice.</p>
-                    <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Strawberry Smoothie" data-product-price="2500">Add to Cart</button> -->
-                    <a href="index.php?pro_id=9" class="tm-btn-primary tm-align-right">Add to Cart</a>    
+                    <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right"
+                    data-product-name="Strawberry Smoothie" data-product-price="2500">Add to Cart</button> -->
+                    <a href="index.php?pro_id=Strawberry Smoothie&price=2500" class="tm-btn-primary tm-align-right">Add to Cart</a>    
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -219,7 +220,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Red Berry Smoothie<span class="tm-list-item-price">#3500</span></h3>
                     <p class="tm-list-item-description">Frozen berries, frozen bananas, yogurt, and a liquid such as almond milk or orange juice.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Red Berry Smoothie" data-product-price="3500">Add to Cart</button> -->
-                    <a href="index.php?pro_id=10" class="tm-btn-primary tm-align-right">Add to Cart</a>                 
+                    <a href="index.php?pro_id=Red Berry Smoothie&price=3500" class="tm-btn-primary tm-align-right">Add to Cart</a>               
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -228,7 +229,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Pineapple Smoothie<span class="tm-list-item-price">#1500</span></h3>
                     <p class="tm-list-item-description" id="product-price">Tropical combination of pineapple, banana, pineapple juice and Greek yogurt, all blended together until creamy.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Pineapple Smoothie" data-product-price="1500">Add to Cart</button> -->
-                    <a href="index.php?pro_id=11" class="tm-btn-primary tm-align-right">Add to Cart</a>
+                    <a href="index.php?pro_id=Pineapple Smoothie&price=1500" class="tm-btn-primary tm-align-right">Add to Cart</a>
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -237,7 +238,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Spinach Smoothie<span class="tm-list-item-price">#2000</span></h3>
                     <p class="tm-list-item-description">This easy smoothie gets its vibrant green colour from avocado, cucumber, spinach and kale. Blitz with pineapple and coconut water.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Spinach Smoothie" data-product-price="2000">Add to Cart</button>  -->
-                    <a href="index.php?pro_id=12" class="tm-btn-primary tm-align-right">Add to Cart</a>          
+                    <a href="index.php?pro_id=Spinach Smoothie&price2000" class="tm-btn-primary tm-align-right">Add to Cart</a>        
                   </div>
                 </div>              
               </div>
@@ -252,7 +253,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Alexandertorte<span class="tm-list-item-price">#3000</span></h3>
                     <p class="tm-list-item-description">Consisting of pastry strips filled with raspberry preserves or raspberry jam.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Alexandertorte" data-product-price="3000">Add to Cart</button> -->
-                    <a href="index.php?pro_id=13" class="tm-btn-primary tm-align-right">Add to Cart</a>        
+                    <a href="index.php?pro_id=Alexandertorte&price=3000" class="tm-btn-primary tm-align-right">Add to Cart</a>        
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -261,7 +262,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Croissant<span class="tm-list-item-price">#2500</span></h3>
                     <p class="tm-list-item-description">A buttery, flaky, viennoiserie pastry. The dough is layered with butter, rolled and folded several times in succession, then rolled into a thin sheet.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Croissant" data-product-price="2500">Add to Cart</button> -->
-                    <a href="index.php?pro_id=14" class="tm-btn-primary tm-align-right">Add to Cart</a>         
+                    <a href="index.php?pro_id=Croissant&price=2500" class="tm-btn-primary tm-align-right">Add to Cart</a>         
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -270,7 +271,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Apple Strudel<span class="tm-list-item-price">#2500</span></h3>
                     <p class="tm-list-item-description">An oblong strudel pastry jacket with an apple filling inside.The filling is made of grated cooking apples.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Apple Strudel" data-product-price="2500">Add to Cart</button> -->
-                    <a href="index.php?pro_id=15" class="tm-btn-primary tm-align-right">Add to Cart</a>            
+                    <a href="index.php?pro_id=Apple Strudel&price=2500" class="tm-btn-primary tm-align-right">Add to Cart</a>            
                   </div>
                 </div>
                 <div class="tm-list-item">          
@@ -279,7 +280,7 @@ https://www.tooplate.com/view/2121-wave-cafe
                     <h3 class="tm-list-item-name">Doughnuts<span class="tm-list-item-price">#1000</span></h3>
                     <p class="tm-list-item-description">Deep fried flour dough with various toppings and flavors.</p>
                     <!-- <button name="add-to-cart" class="tm-btn-primary tm-align-right" data-product-name="Doughnuts" data-product-price="1000">Add to Cart</button> -->
-                    <a href="index.php?pro_id=16" class="tm-btn-primary tm-align-right">Add to Cart</a>   
+                    <a href="index.php?pro_id=Doughnuts&price=1000" class="tm-btn-primary tm-align-right">Add to Cart</a>   
                   </div>
                 </div>
                          
@@ -394,8 +395,6 @@ https://www.tooplate.com/view/2121-wave-cafe
 
     <footer class="tm-site-footer">
       <p class="tm-black-bg tm-footer-text">Copyright 2023 Café pour la Royauté
-      
-      <!-- | Design: <a href="https://www.tooplate.com" class="tm-footer-link" rel="sponsored" target="_parent">Tooplate</a> -->
       </p>
     </footer>
   </div>

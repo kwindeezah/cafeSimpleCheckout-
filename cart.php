@@ -4,10 +4,8 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Cart</title>
 </head>
@@ -39,6 +37,7 @@
   </nav>
 
   <div class="container">
+    <form action="checkout.php" method="post">
   <table class="table my-3">
     <a href="emptycart.php" class="btn btn-sm btn-danger mt-2">Empty Cart</a>
     <thead>
@@ -75,19 +74,22 @@
           </tr>
           <?php
           $i++;
+          
         endforeach;
         ?>
     </tbody>
   </table>
   <?php $total = array_sum(array_column($_SESSION['cart'], 'price'));?>
   <h3>Total #<?=$total;?></h3>
+  <input type="hidden" name="total_amount" value="<?= $total; ?>">
   <?php endif; ?>
+  <div class="text-center">
+    <a class="btn btn-sm btn-success col-2 btn-lg" href="checkout.php">Buy Now</a>
+  </div>
+</form>
 </div>
-<div class="text-center">
-<a class="btn btn-sm btn-success col-2 btn-lg" href="removecartitem.php?id=<?= $cart['pro_id']; ?>">Buy Now</a>
-</div>
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
