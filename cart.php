@@ -84,7 +84,7 @@
   <input type="hidden" name="total_amount" value="<?= $total; ?>">
   <?php endif; ?>
   <div class="text-center">
-    <a class="btn btn-sm btn-success col-2 btn-lg" href="checkout.php">Buy Now</a>
+    <button id="buy-now" class="btn btn-sm btn-success col-2 btn-lg" href="checkout.php">Buy Now</button>
   </div>
 </form>
 </div>
