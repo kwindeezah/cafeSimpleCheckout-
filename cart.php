@@ -79,7 +79,9 @@
         ?>
     </tbody>
   </table>
-  <?php $total = array_sum(array_column($_SESSION['cart'], 'price'));?>
+  <?php
+  $total = array_sum(array_column($_SESSION['cart'], 'price'));
+  ?>
   <h3>Total #<?=$total;?></h3>
   <input type="hidden" name="total_amount" value="<?= $total; ?>">
   <?php endif; ?>
