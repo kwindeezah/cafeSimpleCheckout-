@@ -15,17 +15,17 @@ print_r($_SESSION)?>
     <form action="action.php" method="post" >
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email-address" placeholder="Enter your email">
+            <input type="email" class="form-control" id="email-address" name="email" placeholder="Enter your email">
         </div>
 
         <div class="form-group">
             <label for="username">Username:</label>
-            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
         </div>
 
         <div class="form-group">
             <label for="amount">Amount:</label>
-            <input type="number" class="form-control" id="amount" value="<?php echo isset($_POST['total_amount']) ? $_POST['total_amount'] : ''; ?>" readonly>
+            <input type="number" class="form-control" id="amount" name="amount" value="<?php echo isset($_POST['total_amount']) ? $_POST['total_amount'] : ''; ?>" readonly>
         </div>
 
         <button type="button" class="btn btn-primary" name="button">Pay</button>

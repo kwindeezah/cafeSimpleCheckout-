@@ -7,7 +7,7 @@ session_start();
 
 
 
-if (isset($_SESSION['cart'])) {
+if (isset($_POST['button'])) {
     // echo "Session ID: " . session_id() . "<br>";
     // print_r (array_column($_SESSION['cart'], 'pro_id'));
     print_r($_SESSION);
