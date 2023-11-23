@@ -1,6 +1,6 @@
 <?php session_start(); 
 
-print_r($_SESSION)?>
+// print_r($_SESSION)?>
 
 <!DOCTYPE html>
 <html>
@@ -28,7 +28,7 @@ print_r($_SESSION)?>
             <input type="number" class="form-control" id="amount" name="amount" value="<?php echo isset($_POST['total_amount']) ? $_POST['total_amount'] : ''; ?>" readonly>
         </div>
 
-        <button type="button" class="btn btn-primary" name="button">Pay</button>
+        <button type="submit" class="btn btn-primary" name="button">Pay</button>
     </form>
 </div>
 

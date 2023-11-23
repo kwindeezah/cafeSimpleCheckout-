@@ -3,15 +3,11 @@ session_start();
 // session_regenerate_id(true);
 // require '../config.php';
 // require '../RetrieveUser.php';
-// require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 
 
 if (isset($_POST['button'])) {
-    // echo "Session ID: " . session_id() . "<br>";
-    // print_r (array_column($_SESSION['cart'], 'pro_id'));
-    print_r($_SESSION);
-    die();
 
     if (isset($_POST['amount'])) {
         $totalCartValue = $_POST['amount'];
@@ -21,7 +17,7 @@ if (isset($_POST['button'])) {
 
     $secret_key = 'sk_test_c048ea8b447ac81cf926724b2538c5feaec366c1'; #USE YOUR PAYSTACK SECRET KEY HERE
     $paystack = new Yabacon\Paystack($secret_key);
-    $email = $_POST['email-address'];
+    $email = $_POST['email'];
 
     function generate_random_string($length)
     {
@@ -73,6 +69,6 @@ if (isset($_POST['button'])) {
 
 } else {
     // Handle the case when the 'totalCart' key is not present in $_POST
-    echo 'Price error';
+    echo 'Error';
     header("location: index.php");
 }
