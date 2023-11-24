@@ -33,6 +33,21 @@
   }
 
 }
+
+// Check if the payment was successful
+if (isset($_SESSION['last_transaction_reference']) && $_SESSION['last_transaction_reference']) {
+  // Clear the cart
+  clear_cart();
+
+  // Unset the session variable holding the last transaction reference
+  unset($_SESSION['last_transaction_reference']);
+}
+
+// Function to clear the cart (you need to implement this)
+function clear_cart() {
+  // Unset the cart session variable
+  unset($_SESSION['cart']);
+}
 //   echo "Session ID: " . session_id() . "<br>";
 // print_r($_SESSION);
 ?>

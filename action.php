@@ -63,6 +63,8 @@ if (isset($_POST['button'])) {
 // store transaction reference so we can query in case user never comes back
 // perhaps due to network issue
     // save_last_transaction_reference($tranx->data->reference);
+    // Save the transaction reference for future reference
+    $_SESSION['last_transaction_reference'] = $tranx->data->reference;
 
 // redirect to page so User can pay
     header('Location: ' . $tranx->data->authorization_url);
