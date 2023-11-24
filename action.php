@@ -15,7 +15,7 @@ if (isset($_POST['button'])) {
         echo "Error, No amount Selected";
     }
 
-    $secret_key = 'sk_test_c048ea8b447ac81cf926724b2538c5feaec366c1'; #USE YOUR PAYSTACK SECRET KEY HERE
+    $secret_key = 'SECRET_KEY'; #USE YOUR PAYSTACK SECRET KEY HERE
     $paystack = new Yabacon\Paystack($secret_key);
     $email = $_POST['email'];
 
