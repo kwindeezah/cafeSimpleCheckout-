@@ -3,7 +3,10 @@ session_start();
 // session_regenerate_id(true);
 // require '../config.php';
 // require '../RetrieveUser.php';
-require 'vendor/autoload.php';
+require __DIR__ . 'vendor/autoload.php';
+
+// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+// $dotenv->load();
 
 
 
