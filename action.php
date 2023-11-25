@@ -3,7 +3,7 @@ session_start();
 // session_regenerate_id(true);
 // require '../config.php';
 // require '../RetrieveUser.php';
-require __DIR__ . 'vendor/autoload.php';
+require 'vendor/autoload.php';
 
 // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 // $dotenv->load();
@@ -18,7 +18,7 @@ if (isset($_POST['button'])) {
         echo "Error, No amount Selected";
     }
 
-    $secret_key = 'SECRET_KEY'; #USE YOUR PAYSTACK SECRET KEY HERE
+    $secret_key = 'sk_test_c048ea8b447ac81cf926724b2538c5feaec366c1'; #USE YOUR PAYSTACK SECRET KEY HERE
     $paystack = new Yabacon\Paystack($secret_key);
     $email = $_POST['email'];
 
