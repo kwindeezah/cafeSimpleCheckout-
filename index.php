@@ -1,6 +1,5 @@
 <?php
   session_start();
-
   if (isset($_GET['pro_id'], $_GET['price'])) {
     $proid = $_GET['pro_id'];
       $price = $_GET['price'];
