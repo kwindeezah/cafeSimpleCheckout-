@@ -72,7 +72,7 @@ https://www.tooplate.com/view/2121-wave-cafe
       <div class="tm-left">
         <div class="tm-left-inner">
           <div class="tm-site-header">
-            <i class="fas fa-coffee fa-3x tm-site-logo"></i>
+            <a href="index.php"><i class="fas fa-coffee fa-3x tm-site-logo"></i></a>
             <h1 class="tm-site-name">Café pour la Royauté</h1>
           </div>
           <nav class="tm-site-nav">
