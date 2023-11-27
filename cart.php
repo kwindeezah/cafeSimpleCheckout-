@@ -37,7 +37,7 @@
   </nav>
 
   <div class="container">
-    <form action="checkout.php" method="post">
+    <!-- <form action="checkout.php" method="post"> -->
   <table class="table my-3">
     <a href="emptycart.php" class="btn btn-sm btn-danger mt-2">Empty Cart</a>
     <thead>
@@ -59,15 +59,16 @@
             <td><?php echo $i; ?></td>
             <td><?php echo $cart['pro_id']; ?></td>
             <td>
-              <?php echo $cart['price']; ?>
-            </td>
-            <form action="update.php" method="post">
-            <td>
-                <input type="number" value="<?= $cart['qty']; ?>" name="qty" min="1">
-                <input type="hidden" name="upid" value="<?= $cart['pro_id']; ?>">
-            </td>
-            <td>
-              <input type="submit" name="update" value="Update" class="btn btn-sm btn-warning">
+              <form action="update.php" method="post">
+                  <input type="text" name="price" value="<?= $cart['price']; ?>" readonly>
+                  <input type="hidden" name="uprice" value="<?= $cart['pro_id']; ?>">
+                </td>
+                <td>
+                  <input type="hidden" name="upid" value="<?= $cart['pro_id']; ?>">
+                  <input type="number" value="<?= $cart['qty']; ?>" name="qty" min="1">
+                </td>
+                <td>
+                  <input type="submit" name="update" value="update" class="btn btn-sm btn-warning">
               </form>
             </td>
             <td><a class="btn btn-sm btn-danger" href="removecartitem.php?id=<?= $cart['pro_id']; ?>">Remove</a></td>
@@ -79,6 +80,7 @@
         ?>
     </tbody>
   </table>
+  <form action="checkout.php" method="post">
   <?php
   $total = array_sum(array_column($_SESSION['cart'], 'price'));
   ?>
@@ -86,7 +88,7 @@
   <input type="hidden" name="total_amount" value="<?= $total; ?>">
   <?php endif; ?>
   <div class="text-center">
-    <button id="buy-now" class="btn btn-sm btn-success col-2 btn-lg" href="checkout.php">Buy Now</button>
+    <button type="submit" id="buy-now" class="btn btn-sm btn-success col-2 btn-lg" href="checkout.php">Buy Now</button>
   </div>
 </form>
 </div>

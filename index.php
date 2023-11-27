@@ -3,6 +3,7 @@
   if (isset($_GET['pro_id'], $_GET['price'])) {
     $proid = $_GET['pro_id'];
       $price = $_GET['price'];
+      $original_price = $_GET['price'];
     
     if (!empty($_SESSION['cart'])) {
       
@@ -11,7 +12,7 @@
     if (in_array($proid, $acol)) {
       
       $_SESSION['cart'][$proid]['qty'] += 1;
-      $_SESSION['cart'][$proid]['price'] += $price;
+      // $_SESSION['cart'][$proid]['price'] += $price;
     } else {
       
       $item = [
@@ -417,8 +418,8 @@ https://www.tooplate.com/view/2121-wave-cafe
     
   <!-- Background video -->
   <div class="tm-video-wrapper">
-      <i id="tm-video-control-button" class="fas fa-pause"></i>
-      <video autoplay muted loop id="tm-video">
+      <!-- <i id="tm-video-control-button" class="fas fa-pause"></i> -->
+      <video id="tm-video">
           <source src="video/wave-cafe-video-bg.mp4" type="video/mp4">
       </video>
   </div>
@@ -510,20 +511,20 @@ https://www.tooplate.com/view/2121-wave-cafe
       };
 
       // Play/Pause button for video background      
-      const btn = $("#tm-video-control-button");
+      // const btn = $("#tm-video-control-button");
 
-      btn.on("click", function(e) {
-        const video = document.getElementById("tm-video");
-        $(this).removeClass();
+      // btn.on("click", function(e) {
+      //   const video = document.getElementById("tm-video");
+      //   $(this).removeClass();
 
-        if (video.paused) {
-          video.play();
-          $(this).addClass("fas fa-pause");
-        } else {
-          video.pause();
-          $(this).addClass("fas fa-play");
-        }
-      });
+      //   if (video.paused) {
+      //     video.play();
+      //     $(this).addClass("fas fa-pause");
+      //   } else {
+      //     video.pause();
+      //     $(this).addClass("fas fa-play");
+      //   }
+      // });
     });
   </script>
 </body>
